@@ -1,6 +1,6 @@
 import React from "react";
 import { Checkbox, FormControlLabel } from "@mui/material";
-import { ReactComponent as CheckedIcon } from "../svg/checkedIcon.svg";
+import { ReactComponent as CheckedIcon } from "./assets/svg/checkedIcon.svg";
 
 interface Props {
   option: string;

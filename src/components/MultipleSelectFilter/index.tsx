@@ -8,7 +8,7 @@ import {
   FormGroup,
 } from "@mui/material";
 import { makeStyles } from "tss-react/mui";
-import { ReactComponent as Search } from "../svg/search.svg";
+import { ReactComponent as Search } from "./assets/svg/search.svg";
 import { ListItem } from "./ListItem";
 import { Placeholder } from "./Placholder";
 import { LoadingPlaceholder } from "./LoadingPlaceholder";
@@ -125,7 +125,7 @@ export const MultipleSelectFilter = (props: Props) => {
             isSelected={selectedOptions.includes(value)}
           />
         ))}
-      {Boolean(filteredListItems.length) || Boolean(selectedItems.length) ? (
+      {Boolean(filteredListItems.length) || Boolean(selectedOptions.length) ? (
         <>
           {filteredListItems.map((value: string) => (
             <ListItem
@@ -137,7 +137,10 @@ export const MultipleSelectFilter = (props: Props) => {
           ))}
         </>
       ) : (
-        <Placeholder message="No options found" status="info" />
+        <>
+          12
+          <Placeholder message="No options found" status="info" />
+        </>
       )}
     </FormGroup>
   );

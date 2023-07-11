@@ -1,6 +1,6 @@
 import React from "react";
 import { render, screen, fireEvent } from "@testing-library/react";
-import { MultipleSelectFilter } from ".";
+import { MultipleSelectFilter } from "../index";
 
 describe("MultipleSelectFilter", () => {
   test("renders the component with initial state", () => {
