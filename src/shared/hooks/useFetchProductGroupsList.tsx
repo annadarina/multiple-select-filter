@@ -18,7 +18,10 @@ export const useFetchProductGroupsList = (): FetchProductGroupsListResult => {
       try {
         const data = await fetchProductGroups();
         setIsLoading(false);
-        const sortedGroups = [...data].sort((a, b) => a.localeCompare(b));
+        // sort options alphabetically and replace '&amp;' with '&'
+        const sortedGroups = [...data]
+          .sort((a, b) => a.localeCompare(b))
+          .map((group) => group.replace("&amp;", "&"));
         setProductGroups(sortedGroups);
       } catch (error: any) {
         // Handle the error
