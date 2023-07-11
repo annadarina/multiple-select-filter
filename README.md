@@ -27,7 +27,15 @@ Setup a project and create a `MultipleSearchFilter` component based on the given
 
 ## Result
 
-Created Multiple Select Filter component using React.js and MUI library.
+Created Multiple Select Filter component using React and MUI library.
+
+Check final result [here]().
+
+## Run App in the Development Mode
+1. Clone the repo
+2. Run `npm install`
+3. Run `npm run start`
+4. Open [http://localhost:3000](http://localhost:3000) to view app in the browser
 
 ## Next Steps and Improvements
 
