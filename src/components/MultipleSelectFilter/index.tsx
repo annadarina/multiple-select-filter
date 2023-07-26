@@ -138,7 +138,6 @@ export const MultipleSelectFilter = (props: Props) => {
         </>
       ) : (
         <>
-          12
           <Placeholder message="No options found" status="info" />
         </>
       )}
