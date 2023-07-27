@@ -56,9 +56,10 @@ export const MultipleSelectFilter = (props: Props) => {
   useEffect(() => {
     if (storageKey) {
       const savedOptions = localStorage.getItem(storageKey);
-      if (savedOptions) {
-        setSelectedOption(JSON.parse(savedOptions));
-      }
+      const updatedOptions = savedOptions
+        ? Array.from(new Set([...JSON.parse(savedOptions), ...selectedItems]))
+        : selectedItems;
+      setSelectedOption(updatedOptions);
     } else {
       setSelectedOption(selectedItems);
     }
